@@ -5,8 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by dell on 2016/3/5.
- *准备建立三张表，Province、City、County，分别
+ *这是创建数据库和表的类，将建表语句写入到代码
+
+ 准备建立三张表，Province、City、County，分别
  用于存放省、市、县的各种数据信息，三张表的建表语句分别如下。
  Province：
  create table Province (
@@ -33,8 +34,6 @@ import android.database.sqlite.SQLiteOpenHelper;
  其中id 是自增长主键，county_name 表示县名，county_code 表示县级代号，city_id 是
  County 表关联City 表的外键。
 
- 建表语句就是这样，接下来我们将建表语句写入到代码中。在db 包下新建一个
- CoolWeatherOpenHelper 类
  *
  *
  */
