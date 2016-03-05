@@ -92,7 +92,7 @@ public class CoolWeatherDB {
 
     /**
      * 将City实例存储到数据库。
-     * 封装了insert方法，如果city不是空值，将provice的name和code存入指定的数据库表格。
+     * 封装了insert方法，如果city不是空值，将city的name和code和省id存入指定的数据库表格。
      */
     public void saveCity(City city) {
         if (city != null) {
@@ -130,7 +130,7 @@ public class CoolWeatherDB {
 
     /**
      * 将County实例存储到数据库。
-     * 封装了insert方法，如果city不是空值，将provice的name和code存入指定的数据库表格。
+     * 封装了insert方法，如果county不是空值，将county的name和code和市id存入指定的数据库表格。
      */
     public void saveCounty(County county) {
         if (county != null) {
